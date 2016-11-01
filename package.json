@@ -1,0 +1,23 @@
+{
+  "name": "yamvish-foundation",
+  "version": "0.0.1",
+  "description": "Foundation 6 api for yamvish",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomocas/yamvish-foundation.git"
+  },
+  "keywords": [
+    "foundation",
+    "yamvish"
+  ],
+  "author": "Gilles Coomans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nomocas/yamvish-foundation/issues"
+  },
+  "homepage": "https://github.com/nomocas/yamvish-foundation#readme"
+}
