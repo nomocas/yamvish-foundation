@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div data-sticky-container id="main-nav">
+        <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+            <div class="title-bar-left">
+                title left (bar)
+            </div>
+            <div class="title-bar-right">
+                title right (bar)
+            </div>
+        </div>
+    </div>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+                <!-- Close button -->
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Menu -->
+                <ul class="vertical menu">
+                    <li><a href="#">Foundation</a> </li>
+                    <li><a href="#">Dot</a></li>
+                    <li><a href="#">ZURB</a></li>
+                    <li><a href="#">Com</a></li>
+                    <li><a href="#">Slash</a></li>
+                    <li><a href="#">Sites</a></li>
+                </ul>
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <div class="row">
+                    <div class="title-bar">
+                        <div class="title-bar-left">
+                            <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+                            <span class="title-bar-title">Foundation</span>
+                        </div>
+                        <div class="title-bar-right">
+                            <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li class="is-dropdown-submenu-parent">
+                            <a href="#">Item 1</a>
+                            <ul class="menu">
+                                <li><a href="#">Item 1A</a></li>
+                                <!-- ... -->
+                            </ul>
+                        </li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                    </ul>
+                    <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
+                </div>
+                <div class="row">
+                    <div class="large-8 medium-8 columns">
+                        <div id="app"></div>
+                        <div id="app2"></div>
+                        <h5>Here&rsquo;s your basic grid:</h5>
+                        <!-- Grid Example -->
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <div class="primary callout">
+                                    <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="large-6 medium-6 columns">
+                                <div class="primary callout">
+                                    <p>Six columns</p>
+                                </div>
+                            </div>
+                            <div class="large-6 medium-6 columns">
+                                <div class="primary callout">
+                                    <p>Six columns</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="large-4 medium-4 small-4 columns">
+                                <div class="primary callout">
+                                    <p>Four columns</p>
+                                </div>
+                            </div>
+                            <div class="large-4 medium-4 small-4 columns">
+                                <div class="primary callout">
+                                    <p>Four columns</p>
+                                </div>
+                            </div>
+                            <div class="large-4 medium-4 small-4 columns">
+                                <div class="primary callout">
+                                    <p>Four columns</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+                        <form>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label>Input Label</label>
+                                    <input type="text" placeholder="large-12.columns" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-4 medium-4 columns">
+                                    <label>Input Label</label>
+                                    <input type="text" placeholder="large-4.columns" />
+                                </div>
+                                <div class="large-4 medium-4 columns">
+                                    <label>Input Label</label>
+                                    <input type="text" placeholder="large-4.columns" />
+                                </div>
+                                <div class="large-4 medium-4 columns">
+                                    <div class="row collapse">
+                                        <label>Input Label</label>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="small-9.columns" class="input-group-field" />
+                                            <span class="input-group-label">.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label>Select Box</label>
+                                    <select>
+                                        <option value="husker">Husker</option>
+                                        <option value="starbuck">Starbuck</option>
+                                        <option value="hotdog">Hot Dog</option>
+                                        <option value="apollo">Apollo</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-6 medium-6 columns">
+                                    <label>Choose Your Favorite</label>
+                                    <input type="radio" name="pokemon" value="Red" id="pokemonRed">
+                                    <label for="pokemonRed">Radio 1</label>
+                                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
+                                    <label for="pokemonBlue">Radio 2</label>
+                                </div>
+                                <div class="large-6 medium-6 columns">
+                                    <label>Check these out</label>
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">Checkbox 1</label>
+                                    <input id="checkbox2" type="checkbox">
+                                    <label for="checkbox2">Checkbox 2</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label>Textarea Label</label>
+                                    <textarea placeholder="small-12.columns"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="large-4 medium-4 columns">
+                        <h5>Try one of these buttons:</h5>
+                        <p><a href="#" class="button">Simple Button</a>
+                            <br/>
+                            <a href="#" class="success button">Success Btn</a>
+                            <br/>
+                            <a href="#" class="alert button">Alert Btn</a>
+                            <br/>
+                            <a href="#" class="secondary button">Secondary Btn</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="what-input.js"></script>
+    <script src="foundation.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/***********************************
+ ********************* CUSTOMISATION 
+ ***********************************/
+
+.input-group {
+    & + .input-group-label {
+        border-top-left-radius: $global-radius;
+        border-bottom-left-radius: $global-radius;
+    }
+    input + .input-group-label {
+        border-top-right-radius: $global-radius;
+        border-bottom-right-radius: $global-radius;
+    }
+}
+
+.button-group {
+    a.button,
+    button.button,
+    button.hollow {
+        border-radius: 0;
+    }
+    button.button:first-child,
+    button.hollow:first-child,
+    a.button:first-child {
+        border-top-left-radius: $global-radius;
+        border-bottom-left-radius: $global-radius;
+    }
+    button.button:last-child,
+    button.hollow:last-child,
+    a.button:last-child {
+        border-top-right-radius: $global-radius;
+        border-bottom-right-radius: $global-radius;
+    }
+}
+
+.callout {
+    border: none;
+}
